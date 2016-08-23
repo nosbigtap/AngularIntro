@@ -1,4 +1,4 @@
-<html ng-app="myApp">
+<html ng-app="myApp" >
 
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
@@ -6,9 +6,14 @@
     </head>
 
     <body>
-        <div>
-           <button type="button">Click Me!</button>
-        </div>
-   </body>
+            <div ng-controller="myCtrl">
+            
+                <button ng-click="myFunc()">Click Me!</button>
+                
+                <div ng-show="showMe">
+                    <h1>Hello!</h1>
+                </div>
+            </div>
+    </body>
 
 </html>
